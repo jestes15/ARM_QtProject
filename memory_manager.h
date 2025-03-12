@@ -18,6 +18,9 @@
 #include <sys/mman.h>
 #include <unistd.h>
 
+#include "io_addr_macros.h"
+#include "io_rw_macros.h"
+
 
 // Enumerations for Memory Regions
 enum MEM_REGIONS
@@ -72,8 +75,8 @@ public:
     std::optional<uint8_t> bic_register(MEM_REGIONS memory_region, uint32_t offset, uint32_t value);
     std::optional<uint8_t> bis_register(MEM_REGIONS memory_region, uint32_t offset, uint32_t value);
 
-    std::optional<uint8_t> ror_register();
-    std::optional<uint8_t> rol_register();
+    // std::optional<uint8_t> ror_register();
+    // std::optional<uint8_t> rol_register();
 
     std::optional<uint8_t> write_to_register(MEM_REGIONS memory_region, uint64_t offset, uint64_t value);
     std::optional<uint64_t> read_from_register(MEM_REGIONS memory_region, uint64_t offset);

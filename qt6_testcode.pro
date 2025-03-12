@@ -12,6 +12,9 @@ SOURCES += \
     memory_manager.cpp
 
 HEADERS += \
+    hps_0.h \
+    io_addr_macros.h \
+    io_rw_macros.h \
     mainwindow.h \
     memory_manager.h
 
