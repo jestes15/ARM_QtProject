@@ -29,9 +29,9 @@
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>390</x>
       <y>729</y>
-      <width>631</width>
+      <width>621</width>
       <height>31</height>
      </rect>
     </property>
@@ -134,171 +134,263 @@
    <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>390</x>
       <y>0</y>
-      <width>631</width>
+      <width>621</width>
       <height>731</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout"/>
    </widget>
-   <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <widget class="QWidget" name="formLayoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>0</y>
-      <width>371</width>
-      <height>390</height>
+      <width>381</width>
+      <height>671</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QLabel" name="label_2">
-         <property name="text">
-          <string>ID_PFR0</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>ID_PFR1</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_3">
-         <property name="text">
-          <string>ID_DFR0</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_4">
-         <property name="text">
-          <string>ID_AFR0</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_6">
-         <property name="text">
-          <string>ID_MMFR0</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_7">
-         <property name="text">
-          <string>ID_MMFR1</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_8">
-         <property name="text">
-          <string>ID_MMFR2</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_5">
-         <property name="text">
-          <string>ID_MMFR3</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_10">
-         <property name="text">
-          <string>ID_ISAR0</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_11">
-         <property name="text">
-          <string>ID_ISAR1</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_12">
-         <property name="text">
-          <string>ID_ISAR2</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_13">
-         <property name="text">
-          <string>ID_ISAR3</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_14">
-         <property name="text">
-          <string>ID_ISAR4</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_9">
-         <property name="text">
-          <string>ID_ISAR5</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>MIDR</string>
+       </property>
+      </widget>
      </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="QLineEdit" name="ID_PFR0_le"/>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="ID_PFR1_le"/>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="ID_DFR0_le"/>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="ID_AFR0_le"/>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="ID_MMFR0_le"/>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="ID_MMFR1_le"/>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="ID_MMFR2_le"/>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="ID_MMFR3_le"/>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="ID_ISAR0_le"/>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="ID_ISAR1_le"/>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="ID_ISAR2_le"/>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="ID_ISAR3_le"/>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="ID_ISAR4_le"/>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="ID_ISAR5_le"/>
-       </item>
-      </layout>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>CTR</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>TCMTR</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>TLBTR</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>MPIDR</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>REVIDR</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>ID_PFR0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>ID_PFR1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>ID_DFR0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>ID_AFR0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>ID_MMFR0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>ID_MMFR1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>ID_MMFR2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>ID_MMFR3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="0">
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>ID_ISAR0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="0">
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>ID_ISAR1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="0">
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>ID_ISAR2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="0">
+      <widget class="QLabel" name="label_18">
+       <property name="text">
+        <string>ID_ISAR3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="0">
+      <widget class="QLabel" name="label_19">
+       <property name="text">
+        <string>ID_ISAR4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="19" column="0">
+      <widget class="QLabel" name="label_20">
+       <property name="text">
+        <string>ID_ISAR5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="20" column="0">
+      <widget class="QLabel" name="label_21">
+       <property name="text">
+        <string>CCSIDR</string>
+       </property>
+      </widget>
+     </item>
+     <item row="21" column="0">
+      <widget class="QLabel" name="label_22">
+       <property name="text">
+        <string>CLIDR</string>
+       </property>
+      </widget>
+     </item>
+     <item row="22" column="0">
+      <widget class="QLabel" name="label_23">
+       <property name="text">
+        <string>AIDR</string>
+       </property>
+      </widget>
+     </item>
+     <item row="23" column="0">
+      <widget class="QLabel" name="label_24">
+       <property name="text">
+        <string>CSSELR</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="midr_le"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="ctr_le"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="tcmtr_le"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="tlbtr_le"/>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="mpidr_le"/>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="revidr_le"/>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="id_pfr0_le"/>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="id_pfr1_le"/>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="id_dfr0_le"/>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLineEdit" name="id_afr0_le"/>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLineEdit" name="id_mmfr0_le"/>
+     </item>
+     <item row="11" column="1">
+      <widget class="QLineEdit" name="id_mmfr1_le"/>
+     </item>
+     <item row="12" column="1">
+      <widget class="QLineEdit" name="id_mmfr2_le"/>
+     </item>
+     <item row="13" column="1">
+      <widget class="QLineEdit" name="id_mmfr3_le"/>
+     </item>
+     <item row="14" column="1">
+      <widget class="QLineEdit" name="id_isar0_le"/>
+     </item>
+     <item row="15" column="1">
+      <widget class="QLineEdit" name="id_isar1_le"/>
+     </item>
+     <item row="16" column="1">
+      <widget class="QLineEdit" name="id_isar2_le"/>
+     </item>
+     <item row="17" column="1">
+      <widget class="QLineEdit" name="id_isar3_le"/>
+     </item>
+     <item row="18" column="1">
+      <widget class="QLineEdit" name="id_isar4_le"/>
+     </item>
+     <item row="19" column="1">
+      <widget class="QLineEdit" name="id_isar5_le"/>
+     </item>
+     <item row="20" column="1">
+      <widget class="QLineEdit" name="ccsidr_le"/>
+     </item>
+     <item row="21" column="1">
+      <widget class="QLineEdit" name="clidr_le"/>
+     </item>
+     <item row="22" column="1">
+      <widget class="QLineEdit" name="aidr_le"/>
+     </item>
+     <item row="23" column="1">
+      <widget class="QLineEdit" name="csselr_le"/>
      </item>
     </layout>
    </widget>

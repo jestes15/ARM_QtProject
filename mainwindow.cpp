@@ -19,22 +19,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::readAndDisplayCPUIDData()
 {
-    // Acquire CPUID Reigster Data:
-    asm volatile("MRC p15, 0, %0, c0, c1, 0" : "=r"(this->register_data.pfr0));
-    asm volatile("MRC p15, 0, %0, c0, c1, 1" : "=r"(this->register_data.pfr1));
-    asm volatile("MRC p15, 0, %0, c0, c1, 2" : "=r"(this->register_data.dfr0));
-    asm volatile("MRC p15, 0, %0, c0, c1, 3" : "=r"(this->register_data.afr0));
-    asm volatile("MRC p15, 0, %0, c0, c1, 4" : "=r"(this->register_data.mmfr0));
-    asm volatile("MRC p15, 0, %0, c0, c1, 5" : "=r"(this->register_data.mmfr1));
-    asm volatile("MRC p15, 0, %0, c0, c1, 6" : "=r"(this->register_data.mmfr2));
-    asm volatile("MRC p15, 0, %0, c0, c1, 7" : "=r"(this->register_data.mmfr3));
-    asm volatile("MRC p15, 0, %0, c0, c2, 0" : "=r"(this->register_data.isar0));
-    asm volatile("MRC p15, 0, %0, c0, c2, 1" : "=r"(this->register_data.isar1));
-    asm volatile("MRC p15, 0, %0, c0, c2, 2" : "=r"(this->register_data.isar2));
-    asm volatile("MRC p15, 0, %0, c0, c2, 3" : "=r"(this->register_data.isar3));
-    asm volatile("MRC p15, 0, %0, c0, c2, 4" : "=r"(this->register_data.isar4));
-    asm volatile("MRC p15, 0, %0, c0, c2, 5" : "=r"(this->register_data.isar5));
-
     this->ui->ID_PFR0_le->setText(QString("%1").arg(this->register_data.pfr0, 0, 16));
     this->ui->ID_PFR1_le->setText(QString("%1").arg(this->register_data.pfr1, 0, 16));
     this->ui->ID_DFR0_le->setText(QString("%1").arg(this->register_data.dfr0, 0, 16));
